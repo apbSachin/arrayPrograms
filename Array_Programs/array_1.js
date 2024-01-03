@@ -31,3 +31,33 @@ let bigValue = arr.reduce(
 console.log(bigValue);
 
 
+// FIND THE SUM OF ALL ElEMENET IN AN ARRAY
+let array1= [2,3,4,5,6,7,8,9,10,11];
+// assume sum of all array elements is zero
+let sum = 0;
+ 
+for(let i = 0; i < array1.length; i++){
+  //add current element to array with sum
+  sum += array1[i];
+}
+
+console.log(sum);
+
+//by using function 
+function  sumOFAllElement(arr){
+  let sum1=0;
+  for(let i = 0; i < arr.length;i++){
+    sum1 += arr[i];
+  }
+  return sum1;
+}
+let array2 = [4,5,6]
+console.log(sumOFAllElement(array2));
+
+
+//using reduce method
+function sumArr(arr) {
+  return arr.reduce((previous, current) => previous + current);
+}
+let array3 = [4, 5, 6, 7];
+console.log(sumArr(array3));
