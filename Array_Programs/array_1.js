@@ -1,4 +1,4 @@
-// find the maximum value in array using loops
+//  find the maximum value in array using loops
 let array = [1, 5, 78, 32, 79, 85, 56];
 
 //here 85 is the maximum value so let assume first element of array is maximum
@@ -29,3 +29,5 @@ let bigValue = arr.reduce(
   arr[0]
 );
 console.log(bigValue);
+
+
